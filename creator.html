@@ -20,7 +20,10 @@
   <!-- script to save to pdf-->
   <script src="js/jspdf.js"></script>
 	<script src="js/jquery-2.1.3.js"></script>
-	<script src="js/pdfFromHTML.js"></script>
+  <script src="js/pdfFromHTML.js"></script>
+  
+  <!-- Drag and Drop js -->
+  <script src="js/dragAndDrop.js"></script>
 </head>
 
 <body id="page-top">
@@ -60,14 +63,13 @@
       <!-- Nav Item - Pages Collapse Menu -->
       <li class="nav-item">
         <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
-          <i class="fas fa-fw fa-book"></i>
-          <span>ebooki</span>
+          <i class="far fa-image"></i>
+          <span>obrazki</span>
         </a>
         <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
           <div class="bg-white py-2 collapse-inner rounded">
-            <h6 class="collapse-header">Custom Components:</h6>
-            <a class="collapse-item" href="buttons.html">Stórz</a>
-            <a class="collapse-item" href="cards.html">Przeglądaj</a>
+            <img src="img/cat.jpg" height="85px" alt="ob1" id="ob1" ondragstart="dragStart(event) ">
+         
           </div>
         </div>
       </li>
@@ -356,7 +358,7 @@
                 <!-- Card Body -->
                 <div class="card-body">
                   <div class="chart-area">
-                   <div id="paper"><h3>hello</h3></div> 
+                   <div id="paper" ondragover="allowDrop(event)" ondrop="drop(event)"><h3><bold>ee </bold>hello</h3></div> 
                   </div>
                 </div>
               </div>
