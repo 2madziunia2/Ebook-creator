@@ -646,6 +646,8 @@ pre code {
 }
 #ob1{
   margin: 10px;
+  resize: both;
+  overflow:auto;
 }
 .no-gutters {
   margin-right: 0;
