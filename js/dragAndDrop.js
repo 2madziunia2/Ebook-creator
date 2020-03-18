@@ -4,6 +4,7 @@ function allowDrop(ev)
     event.preventDefault();
 
 }
+
 function dragStart(ev)
 {
     id=ev.target.id;
@@ -11,6 +12,11 @@ function dragStart(ev)
 }
 function drop(ev)
 {
-    ev.target.append(document.getElementById(id));
-    
+    var nodeCopy = document.getElementById(id).cloneNode(true);
+    nodeCopy.id = "newId"; /* We cannot use the same ID */
+    ev.target.appendChild(nodeCopy);
+   //ev.target.append(document.getElementById(nodeCopy));
+ 
 }
+
+

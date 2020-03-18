@@ -1,4 +1,3 @@
-$(document).ready(function(){
-    $('#ob1').resizable(true);
-
-});
+$(".ob1").resizable({
+    handleSelector: ".win-size-grip"
+  });
