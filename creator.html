@@ -81,6 +81,8 @@
         <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
           <div class="bg-white py-2 collapse-inner rounded">
             <img src="img/cat.jpg" height="85px" alt="ob1" id="ob1" ondragstart="dragStart(event)" onclick="">
+            <img src="img/filston.jpeg" height="85px" alt="ob2" id="ob2" ondragstart="dragStart(event)" onclick="">
+            
           </div>
         </div>
       </li>
@@ -350,7 +352,7 @@
           <!-- Page Heading -->
           <div class="d-sm-flex align-items-center justify-content-between mb-4">
             <h1 class="h3 mb-0 text-gray-800">Witaj w Ebook Creator</h1>
-            <a href="#"  onclick="addContent('paper',document.getElementById('cha1').innerHTML)" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm"><i class="fas fa-download fa-sm text-white-50"></i> Zapisz do PDF</a>
+            <a href="#"  onclick="addContent('paper',document.getElementsByClassName('paper').innerHTML)" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm"><i class="fas fa-download fa-sm text-white-50"></i> Zapisz do PDF</a>
 
           </div>
          
@@ -397,13 +399,13 @@
       <!-- End of Main Content -->
 
       <!-- Footer -->
-      <footer class="sticky-footer bg-white">
+     <!-- <footer class="sticky-footer bg-white">
         <div class="container my-auto">
           <div class="copyright text-center my-auto">
             <span>Copyright &copy; Your Website 2019</span>
           </div>
         </div>
-      </footer>
+      </footer> -->
       <!-- End of Footer -->
 
     </div>
